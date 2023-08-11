@@ -1,2 +1,17 @@
-<h1>Books#edit</h1>
-<p>Find me in app/views/books/edit.html.erb</p>
+<h1>Editing Book</h1>
+
+<%= form_with model: @book do |f| %>
+
+  <h4>Title</h4>
+  <%= f.text_field :title %>
+	
+  <h4>Body</h4>
+  <%= f.text_area :body %>
+	<br>
+  <%= f.submit 'Update Book' %>
+  
+<% end %>
+
+<p><a href="/books/#{book.id}" >Show</a> | 
+   <a href="https://4439c7f62c854e1cb6b8b321c003d322.vfs.cloud9.ap-northeast-1.amazonaws.com/books">Back</a>
+</p>

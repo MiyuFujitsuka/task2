@@ -2,6 +2,6 @@
 
 <p><th>Body:</th><%= @book.body %></p>
 
-<p><a href="">Edit</a>|
+<p><%= link_to "Edit", edit_book_path(@book.id) %> | 
    <a href="https://4439c7f62c854e1cb6b8b321c003d322.vfs.cloud9.ap-northeast-1.amazonaws.com/books">Back</a>
 </p>
