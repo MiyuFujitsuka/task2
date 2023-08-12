@@ -23,6 +23,7 @@
   
 <% end %>
 
-<p><a href="/books/#{book.id}" >Show</a> | 
-   <a href="https://4439c7f62c854e1cb6b8b321c003d322.vfs.cloud9.ap-northeast-1.amazonaws.com/books">Back</a>
+<p>
+  <%= link_to "Show", book_path(@book.id) %>| 
+  <%= link_to "Back", books_path %>
 </p>
